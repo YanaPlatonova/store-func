@@ -3,21 +3,21 @@ import './App.css';
 function ShopItemFunc({item}){
 
     return(
-        <div class="main-content">
+        <div className="main-content">
           <h2>{item.brand}</h2>
           <h1>{item.title}</h1>
           <h3>{item.description}</h3>
           
-          <div class="description">{item.descriptionFull}</div>
+          <div className="description">{item.descriptionFull}</div>
           
-          <div class="highlight-window mobile">
-            <div class="highlight-overlay"/>
+          <div className="highlight-window mobile">
+            <div className="highlight-overlay"/>
           </div>
           
-          <div class="divider"/>
+          <div className="divider"/>
           
-          <div class="purchase-info">
-            <div class="price">{item.currency}{item.price}</div>
+          <div className="purchase-info">
+            <div className="price">{item.currency}{item.price}</div>
             <button>Добавить в корзину</button>
           </div>
         </div>
